@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Dashboard Dosen</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #c5cacf;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #888b8d;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            background-color: #afb4b4;
+            width: 200px;
+            padding: 5px;
+        }
+        .logo-container img {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+        .university-name {
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+        }
+        .profile-container img {
+            max-width: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .sidebar {
+            width: 230px;
+            background-color: #888b8d;
+            padding: 20px 0;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #afb4b4;
+            border-bottom: 1px solid #696f75;
+            margin-bottom: 20px;
+        }
+        .sidebar .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .sidebar nav {
+            padding-left: 20px;
+        }
+        .sidebar nav a {
+            display: block;
+            color: #000000;
+            padding: 10px 0;
+            font-size: 1.1em;
+        }
+        .sidebar nav .nav-item {
+            margin-bottom: 10px;
+        }
+        .sidebar nav .nav-item .nav-link {
+            color: #000000;
+        }
+        .sidebar nav .nav-item .nav-link.active {
+            font-weight: bold;
+            color: #000;
+        }
+        .container {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .form-inline button {
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #a3a7a7;
+        }
+        .buttons {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .buttons button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="LOGO.png" alt="University Logo">
+            <div class="university-name">
+                UNIVERSITAS <br> AMIKOM <br> YOGYAKARTA
+            </div>
+        </div>
+        <div class="profile-container">
+            <img src="PROFIL.jpg" alt="Profile Picture">
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="PROFIL.jpg" alt="Profile Picture">
+            <span>USERNAME</span>
+        </div>
+        <nav class="navbar">
+            <a class="nav-item nav-link" href="DASHBOARD.html">DASHBOARD</a>
+            <a class="nav-item nav-link" href="TAMBAH DATA.html">TAMBAHAN DATA</a>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="rekapitulasiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    REKAPITULASI
+                </a>
+                <div class="dropdown-menu" aria-labelledby="rekapitulasiDropdown">
+                    <a class="dropdown-item" href="PRESENSI.html">PRESENSI</a>
+                    <a class="dropdown-item" href="TUGAS.html">TUGAS</a>
+                    <a class="dropdown-item" href="RESPONSI.html">RESPONSI</a>
+                    <a class="dropdown-item" href="UTS.html">UTS</a>
+                    <a class="dropdown-item" href="UAS.html">UAS</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="btn btn-primary">Class</button>
+            <button class="btn btn-primary">UAS</button>
+            <button class="btn btn-success">Apply</button>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>NAME</th>
+                    <th>NIM</th>
+                    <th>NILAI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>STUDENT</td>
+                    <td>12345678</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>STUDENT</td>
+                    <td>12345678</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>STUDENT</td>
+                    <td>12345678</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>STUDENT</td>
+                    <td>12345678</td>
+                    <td>100</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
